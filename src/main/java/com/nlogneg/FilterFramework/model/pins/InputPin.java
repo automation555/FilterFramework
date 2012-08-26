@@ -1,4 +1,4 @@
-package com.nlogneg.FilterFramework.model;
+package com.nlogneg.FilterFramework.model.pins;
 
 import java.util.Queue;
 

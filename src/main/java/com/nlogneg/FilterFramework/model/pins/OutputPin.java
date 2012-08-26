@@ -1,4 +1,4 @@
-package com.nlogneg.FilterFramework.model;
+package com.nlogneg.FilterFramework.model.pins;
 
 /**
  * Represents a Pin that pushes data out.
@@ -13,4 +13,9 @@ public interface OutputPin<E> extends Pin{
 	 * @param pin
 	 */
 	public void subscribe(InputPin<E, ?> pin);
+	
+	/**
+	 * This method pushes new data to all subscribers
+	 */
+	public void notifySubscribers();
 }
