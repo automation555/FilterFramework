@@ -64,8 +64,18 @@ public class BasicFileOutputPin implements OutputPin<Path>{
 			}
 		}
 	}
-
+	
+	/**
+	 * This function is meant to be called by the owning Filter whenever 
+	 * it wants to push a Path onto the internal buffer of the Pin
+	 * @param path
+	 */
 	protected void pushPathData(Path path){
 		buffer.add(path);
+	}
+
+	@Override
+	public Class<Path> getPinDataType() {
+		return Path.class;
 	}
 }

@@ -1,5 +1,6 @@
 package com.nlogneg.FilterFramework.model.filters;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.nlogneg.FilterFramework.model.pins.InputPin;
@@ -11,13 +12,8 @@ import com.nlogneg.FilterFramework.model.pins.OutputPin;
  *
  */
 public abstract class Filter {
-	protected final List<InputPin> inputPins;
-	protected final List<OutputPin> outputPins;
-	
-	protected Filter(List<InputPin> inputPins, List<OutputPin> outputPins){
-		this.inputPins = inputPins;
-		this.outputPins = outputPins;
-	}
+	protected List<InputPin> inputPins = new ArrayList<InputPin>();
+	protected List<OutputPin> outputPins = new ArrayList<OutputPin>();
 	
 	public Iterable<InputPin> getInputPins(){
 		return inputPins;

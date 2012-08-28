@@ -18,4 +18,10 @@ public interface OutputPin<E> extends Pin{
 	 * This method pushes new data to all subscribers
 	 */
 	public void notifySubscribers();
+	
+	/**
+	 * Gets the class for type E
+	 * @return
+	 */
+	public Class<E> getPinDataType();
 }

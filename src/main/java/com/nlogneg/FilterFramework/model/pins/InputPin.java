@@ -25,9 +25,5 @@ public interface InputPin<E, T> extends Pin{
 	 * @return
 	 */
 	public boolean setBuffer(Queue<T> buffer);
-	/**
-	 * Gets the class for type E
-	 * @return
-	 */
-	public Class<E> getPinDataType();
+
 }
