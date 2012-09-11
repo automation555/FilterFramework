@@ -28,4 +28,6 @@ public abstract class Filter {
 			o.notifySubscribers();
 		}
 	}
+	
+	public abstract Iterable<FilterType> getFilterTypes();
 }
